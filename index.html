@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h2 class="mt-5 mb-4">Coinbase API</h2>
+
+  <form id="conversion-form">
+    <select id="convert-from">
+      <option selected>Choose...</option>
+      <option value="btc">BTC</option>
+      <option value="eos">EOS</option>
+      <option value="ltc">LTC</option>
+      <option value="eth">ETH</option>
+    </select>
+
+    <input type="text"
+           id="convert-count"
+           class="mb-5 form-control"
+           placeholder="Amount"
+           aria-label="Text input with dropdown button" />
+
+    <select id="convert-to">
+      <option selected>Choose...</option>
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="gbp">GBP</option>
+      <option value="aud">AUD</option>
+    </select>
+
+    <button type="submit"
+            class="btn btn-primary mt-5"
+            style="width: 8rem">
+      Covert
+    </button>
+
+    <section class="pt-3">
+      <input type="text"
+             id="output"
+             class="form-control"
+             readonly
+             aria-label="Text input with dropdown button" />
+    </section>
+  </form>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
